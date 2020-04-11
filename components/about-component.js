@@ -8,4 +8,5 @@ const ABOUT_COMPONENT = {
     template: '{{$ctrl.message}}'
 }
 
-export default ABOUT_COMPONENT;
+export const ABOUT_MODULE = angular.module('about.module', [])
+    .component('aboutComponent', ABOUT_COMPONENT);
